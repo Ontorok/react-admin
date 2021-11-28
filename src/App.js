@@ -1,8 +1,10 @@
+import Topbar from 'parts/topbar/Topbar';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      Hello Nasir!!! Wellcome to react admin dashboard
+function App(props) {
+  return ( 
+    <div>
+     <Topbar/>
     </div>
   );
 }
