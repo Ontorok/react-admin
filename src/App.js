@@ -1,12 +1,12 @@
-import Topbar from 'parts/topbar/Topbar';
 import React from 'react';
+import Topbar from './parts/topbar/Topbar';
 
-function App(props) {
-  return ( 
+const App = function () {
+  return (
     <div>
-     <Topbar/>
+      <Topbar />
     </div>
   );
-}
+};
 
 export default App;
