@@ -36,6 +36,7 @@
       }
     ],
     "func-names": "off",
+    "import/no-unresolved": "off",
     "prettier/prettier": [
       "error",
       {
