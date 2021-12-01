@@ -2,8 +2,3 @@
   display: flex;
   margin-top: 10px;
 }
-
-.pages {
-  flex: 4;
-  background-color: darkgrey;
-}
