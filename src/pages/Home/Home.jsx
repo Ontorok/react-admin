@@ -1,13 +1,13 @@
 import React from 'react';
-import Chart from '../../parts/chart/Chart';
 import Featured from '../../parts/featured/Featured';
+import UserChart from '../../parts/userChart/UserChart';
 import classes from './Home.module.css';
 
 const Home = function () {
   return (
     <div className={classes.home}>
       <Featured />
-      <Chart />
+      <UserChart />
     </div>
   );
 };
