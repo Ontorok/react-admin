@@ -4,7 +4,7 @@ import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis } f
 import classes from './Chart.module.css';
 
 const Chart = function (props) {
-  const { title, data, dataKey } = props;
+  const { title, data, dataKey, showGrid } = props;
   return (
     <div className={classes.chart}>
       <h3 className={classes.chartTitle}>{title}</h3>
@@ -13,7 +13,7 @@ const Chart = function (props) {
           <XAxis dataKey="name" stroke="#5550bd" interval="preserveStartEnd" />
           <Line type="monotone" dataKey={dataKey} stroke="#5550bd" />
           <Tooltip />
-          <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+          {showGrid && <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />}
         </LineChart>
       </ResponsiveContainer>
     </div>
@@ -23,7 +23,12 @@ const Chart = function (props) {
 Chart.prototypes = {
   title: PropTypes.string.isRequired,
   data: PropTypes.array.isRequired,
-  dataKey: PropTypes.string.isRequired
+  dataKey: PropTypes.string.isRequired,
+  showGrid: PropTypes.bool
+};
+
+Chart.defaultProps = {
+  showGrid: false
 };
 
 export default Chart;
