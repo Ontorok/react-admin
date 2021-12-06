@@ -10,7 +10,9 @@ import {
   TrendingUp,
   WorkOutline
 } from '@mui/icons-material';
+import clsx from 'clsx';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './sidebar.css';
 
 const Sidebar = function () {
@@ -21,9 +23,11 @@ const Sidebar = function () {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-              <span>Home</span>
+            <li>
+              <NavLink to="/" className="sidebarListItem">
+                <LineStyle className="sidebarIcon" />
+                <span>Home</span>
+              </NavLink>
             </li>
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />
@@ -41,9 +45,14 @@ const Sidebar = function () {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <PermIdentity className="sidebarIcon" />
-              <span>User</span>
+            <li>
+              <NavLink
+                to="/users"
+                className={({ isActive }) => clsx('sidebarListItem', isActive ? 'active' : '')}
+              >
+                <PermIdentity className="sidebarIcon" />
+                <span>User</span>
+              </NavLink>
             </li>
             <li className="sidebarListItem">
               <Storefront className="sidebarIcon" />

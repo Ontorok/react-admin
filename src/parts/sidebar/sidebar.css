@@ -30,13 +30,16 @@
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .sidebarListItem.active {
   background-color: rgb(225, 225, 241);
+  text-decoration: none;
+  color: black;
 }
 
-.sidebarListItem:hover {
+.sidebarListItem:hover:not(.active) {
   background-color: rgb(241, 241, 247);
 }
 
