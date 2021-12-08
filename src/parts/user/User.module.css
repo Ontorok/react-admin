@@ -1,0 +1,89 @@
+.user {
+  flex: 4;
+  padding: 20px;
+}
+
+.userTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userAddBtn {
+  width: 60px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.userContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.userShow {
+  flex: 1;
+  -webkit-box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+
+.userShowTop {
+  display: flex;
+  align-items: center;
+}
+.userShowImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.userShowTopTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.userShowUserName {
+  font-weight: 600;
+}
+
+.userShowUserTitle {
+  font-weight: 300;
+}
+
+.userShowBottom {
+  margin-top: 20px;
+}
+
+.userShowBottomTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(102, 95, 95);
+}
+
+.userShwoInfo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.userShwoInfoIcon {
+}
+
+.userShwoInfoTitle {
+  margin-left: 10px;
+}
+
+.userUpdate {
+  flex: 2;
+  -webkit-box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+  margin-left: 10px;
+}
