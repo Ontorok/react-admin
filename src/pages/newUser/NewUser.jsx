@@ -1,3 +1,11 @@
+/**
+ * Title: User Form
+ * Description: User Form
+ * Author: Nasir Ahmed
+ * Date: 01-January-2022
+ * Modified: 01-January-2022
+ * */
+
 import React from 'react';
 import classes from './NewUser.module.css';
 

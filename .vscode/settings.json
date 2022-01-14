@@ -5,6 +5,7 @@
   // config related to code formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.hover.enabled": false,
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.defaultFormatter": null

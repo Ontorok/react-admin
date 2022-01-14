@@ -54,9 +54,14 @@ const Sidebar = function () {
                 <span>User</span>
               </NavLink>
             </li>
-            <li className="sidebarListItem">
-              <Storefront className="sidebarIcon" />
-              <span>Products</span>
+            <li>
+              <NavLink
+                to="/products"
+                className={({ isActive }) => clsx('sidebarListItem', isActive ? 'active' : '')}
+              >
+                <Storefront className="sidebarIcon" />
+                <span>Products</span>
+              </NavLink>
             </li>
             <li className="sidebarListItem">
               <TrendingUp className="sidebarIcon" />
