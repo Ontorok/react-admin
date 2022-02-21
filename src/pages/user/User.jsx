@@ -7,22 +7,19 @@ import {
   Upload
 } from '@mui/icons-material';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import classes from './User.module.css';
 
 const User = function () {
-  const navigate = useNavigate();
-
-  const onNavigate = () => {
-    navigate('/newUser');
-  };
   return (
     <div className={classes.user}>
       <div className={classes.userTitleContainer}>
         <h1>Edit User</h1>
-        <button type="button" className={classes.userAddBtn} onClick={onNavigate}>
-          ADD
-        </button>
+        <Link to="/newUser">
+          <button type="button" className={classes.userAddBtn}>
+            ADD
+          </button>
+        </Link>
       </div>
 
       <div className={classes.userContainer}>
